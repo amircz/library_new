@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ tbody {
+   display: inline-block !important;
+   height: 300px !important;
+   width: 300px !important;
+   overflow: auto !important;
+   direction: ltr;
+   text-align: right;
+ }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ tr {
+   width: 300px !important;
+ }
+
+ html {
+   font-size: 20px;
+   font-weight: bold;
+ }
+ .clickable:hover {
+   color: rgb(42, 110, 236) !important;
+   text-decoration: underline !important;
+   cursor:pointer;
+ }
+
+ td {
+   background-color: darkgrey;
+   color: black;
+   text-align: right !important;
+   height: 50px !important;
+   width: 300px !important;
+ }
+
+ th {
+   font-size: 40px;
+   font-weight: bold;
+   text-align: right !important;
+ }
+
+ .MuiDialog-paperWidthSm {
+   max-width: 900px !important;
+   height: 600px !important;
+ }
+
+ tbody::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   background-color: #F5F5F5;
+ }
+
+ tbody::-webkit-scrollbar {
+   width: 12px;
+   background-color: #F5F5F5;
+ }
+
+ tbody::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+   background-color: rgb(39, 88, 116);
+ }
+ .stam{
+   width: 33.13px;
+   display: inline-block;
+ }
+ #break{}
+
+ #break::before{content: ''; display: block;}
+ .stam::before{
+   content: ".";
+   visibility: hidden;
+ }
+
+ .MuiTableCell-head{
+   text-align: center !important;
+ }
